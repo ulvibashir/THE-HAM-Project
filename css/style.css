@@ -1,0 +1,178 @@
+:root{
+    --primaryColor: #18cfab;
+}
+
+* {
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Part */
+.header {
+    width: 100%;
+    height: 100px;
+    min-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header > .container.row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-logo-text {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-logo-text p {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.header-logo-text p span {
+    cursor: pointer;
+    font-weight: 600;
+    padding-left: 1px;
+    color: var(--primaryColor);
+}
+
+.header-logo-text img {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+.header-buttons ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.header-buttons ul li {
+    padding-left: 16px;
+    height: 100%;
+    
+}
+
+.header-buttons ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all .4s ease;
+    position: relative;
+}
+
+.header-buttons ul li a:hover {
+    color: var(--primaryColor);
+}
+.header-buttons ul li a:hover::after {
+    opacity: 1;
+}
+
+.header-buttons ul li img {
+    cursor: pointer;
+}
+
+.header-buttons ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px solid var(--primaryColor);
+    top: 58px;
+    left: 0;
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+
+/* First Section */
+
+.first-section {
+    background-attachment: fixed;
+    background-image: url('../Images/night.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 930px;
+}
+
+.headings {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.headings h3 {
+    font-size: 25px;
+    color: white;
+    line-height: 70px;
+
+}
+.headings h3 span {
+    color: var(--primaryColor);
+}
+.headings h1 {
+    font-size: 55px;
+    color: white;
+}
+.headings p {
+    color: #d4d4d4;
+    font-size: 25px;
+    line-height: 70px;
+}
+
+.download-button-container button {
+    margin-top: 70px;
+    width: 140px;
+    height: 60px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    border-top: 4px solid white;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .4s ease;
+}
+
+.left-button {
+    background-color: var(--primaryColor);
+    margin-right: 50px;
+}
+.right-button {
+    background-color: #00cbf6;
+}
+.right-button:hover {
+    background-color: #009ab9;
+}
+
+.left-button:hover {
+    background-color: #12977d;
+}
+
+.download-button-container {
+    justify-content: center;
+}
+
+/* Second Section */
+
