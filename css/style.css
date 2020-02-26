@@ -176,3 +176,55 @@ header > .container.row {
 
 /* Second Section */
 
+.second-section {
+    width: 100%;
+    height: 400px;
+}
+
+.second-section img {
+    padding-top: 135px;
+    padding-bottom: 35px;
+    display: block;
+    margin: 0 auto;
+}
+
+.second-section div {
+    width: calc(100% / 4);
+    height: 100%;
+}
+
+
+
+.first-block, .third-block {
+    border-top: 10px solid var(--primaryColor);
+    background-color: #1c2a33;
+}
+
+.second-block, .fourth-block {
+    background-color: var(--primaryColor);
+    border-top: 10px solid white;
+}
+
+
+
+
+.first-block p, .third-block p{
+    color: var(--primaryColor);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+} 
+
+.second-block p, .fourth-block p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+} 
+
+
+/* Third Section */
+
+.third-section{
+    
+}
