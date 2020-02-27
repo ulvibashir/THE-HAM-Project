@@ -18,15 +18,7 @@ const imageList = [
 
 // Text can be added to this array now I will keep 1 text 
 const textList = [
-    `Lorem ipsum dolor, sit amet consectetur
-    adipisicing elit. Distinctio explicabo
-    aspernatur harum vel. Et dignissimos
-    illo odit non, minus nesciunt. Numquam
-    nam sapiente possimus facere? Iusto similique
-    veniam nam quaerat. Autem nemo labore repudiandae,
-    esse omnis fugit sapiente officiis. Nam debitis
-    ullam repellendus voluptas tempora minima, aliquid
-    odio totam quos.`,
+    `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio explicaboaspernatur harum vel. Et dignissimos illo odit non, minus nesciunt. Numquam nam sapiente possimus facere? Iusto similiquev eniam nam quaerat. Autem nemo labore repudiandae, esse omnis fugit sapiente officiis. Nam debitis ullam repellendus voluptas tempora minima, aliquid odio totam quos.`,
     `At the outset, web designing emerged as an easier and simple way of exchanging information. It was a better means of communication and had better networking benefits compared to the commercial reasons. Later on, the Web became an avenue for making profits, and the information space that was prior for providing free exchange thus changed to a space for commercial transactions.`,
     `There was also need to allow programmers to distribute their software freely and enable people to modify source codes. The current web-based software developers such as PHP, Firefox, WordPress and Linux are thus major contributors to development of modern websites. Open source has consequently had a direct influence on web development and browsing such as flexibility and innovative development initiatives in addition to providing network solutions.`,
     `Development of ‘open source’ receives very little attention especially official concerns by the initial founders for its development. The initial organizations to benefit from the open licensing systems directly included the Department of Defence (DOD), Research Agencies, and the Lab researchers such as National Laboratories (Reece et al, 92). These organizations were the most viable producers, users and beneficiaries of the licensing operation.`,

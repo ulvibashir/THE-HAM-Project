@@ -38,7 +38,6 @@ class TabPanel {
 
 let tabs = [];
 for (let i = 0; i < tabList.length; i++) {
-    // I can change 0 to i for setting each tab its own text but I set 0
     let tab = new TabPanel(i,i,i);
     tabs.push(tab);
 }
