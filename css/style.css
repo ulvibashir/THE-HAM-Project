@@ -106,7 +106,10 @@ header > .container.row {
 
 .first-section {
     background-attachment: fixed;
+    /* default image */
+    /* background-image: url('../Images/Sections background/section-1\(header\).jpg'); */
     background-image: url('../Images/night.jpg');
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -164,10 +167,13 @@ header > .container.row {
 }
 .right-button:hover {
     background-color: #009ab9;
+    box-shadow: 0 -10px 10px #009ab9;
 }
 
 .left-button:hover {
     background-color: #12977d;
+    box-shadow: 0 -10px 10px #12977d;
+
 }
 
 .download-button-container {
@@ -198,6 +204,7 @@ header > .container.row {
 .first-block, .third-block {
     border-top: 10px solid var(--primaryColor);
     background-color: #1c2a33;
+    
 }
 
 .second-block, .fourth-block {
@@ -220,11 +227,124 @@ header > .container.row {
     text-align: center;
     font-size: 20px;
     font-weight: 700;
+    padding-top: 15px;
 } 
 
 
-/* Third Section */
+/* Third Section  Our Services*/
 
 .third-section{
+    height: 600px;
     
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 90px;
+    position: relative;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    top: 65px;
+    background-color: #18cfab;
+    left: 45%;
+
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    top: 72px;
+    background-color: #18cfab;
+    left: 47%;
+}
+
+
+.tab-panel {
+    margin-top: 100px;
+}
+
+.tab-list {
+    list-style: none;
+    justify-content: center;
+}
+
+.tab-list-element {
+    background-color: #f8fcfe;
+    width: 190px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid #ebecec;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: all .5s ease;
+}
+
+.active-tab {
+    background-color: var(--primaryColor);
+    color: white;
+    border-color: var(--primaryColor);
+    box-shadow: 0 0 10px gray;
+    z-index: 10;
+    
+
+}
+
+.active-tab::after {
+    /* tab triangle */
+
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid var(--primaryColor);
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    top: 100%;
+    right: 75px;
+
+}
+
+
+/* third section tab content */
+
+.content-panel {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+.content-panel img {
+    margin-right: 20px;
+    transition: all .5s ease;
+    
+}
+
+.content-panel p {
+    line-height: 30px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+
+/* Fourth Section */
+
+.fourth-section {
+    height: 400px;
+    background-attachment: fixed;
+    /* default image */
+    /* background-image: url('../Images/Sections background/section-2.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
 }
