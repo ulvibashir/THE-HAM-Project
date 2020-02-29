@@ -115,7 +115,7 @@ header > .container.row {
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 930px;
+    height: 940px;
 }
 
 .headings {
@@ -328,7 +328,6 @@ header > .container.row {
 .content-panel img {
     margin-right: 20px;
     transition: all .5s ease;
-    
 }
 
 .content-panel p {
@@ -338,7 +337,7 @@ header > .container.row {
 }
 
 
-/* Fourth Section */
+/* Fourth Section Download section*/  
 
 .fourth-section {
     height: 500px;
@@ -400,8 +399,179 @@ header > .container.row {
 /* Fifth section Our amazing Works */
 
 .fifth-section {
-    height: 800px;
+    height: 1150px;
 }
+
+
+.filter-tabs-list {
+    margin-top: 100px;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+
+.filter-tab-item:first-child {
+    background-color: #f8fcfe;
+    width: 100px;
+    height: 65px;
+    text-align: center;
+    border: 1px solid #ebecec;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: all .5s ease;
+}    
+
+.filter-tab-item:not(:first-child) {
+    background-color: #f8fcfe;
+    width: 175px;
+    height: 65px;
+    text-align: center;
+    border: 1px solid #ebecec;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: all .5s ease;
+}    
+
+.filter-active {
+    color: var(--primaryColor);
+    border-top: 4px solid var(--primaryColor) !important; 
+    box-shadow: 0 0 10px gray;
+    z-index: 10;
+}
+
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.content-container img {
+    width: 284px;
+    height: 206px;
+}
+
+
+
+.loadMore {
+    display: block;
+    margin: 100px auto 0 auto;
+    width: 140px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: all .4s ease;
+    background-color: var(--primaryColor);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.loadMore span {
+    font-size: 17px;
+}
+.loadMore:hover {
+    background-color: #12977d;
+    box-shadow: 0 0 10px #12977d;
+}
+
+
+.hoverBox {
+    width: 284px;
+    height: 206px;
+    background-color: #f8fcfe;
+    border-top: 4px solid var(--primaryColor);
+    transition: all .5s ease-in;
+}
+
+
+/* Hover box for Our Amazing Works section */
+
+.btn-container {
+    margin-top: 40px;
+    justify-content: center;
+}
+.hoverBox button {
+
+   width: 40px; 
+   height: 40px;
+   border: 1px solid var(--primaryColor);
+   background-color: #f8fcfe;
+   cursor: pointer;
+   border-radius: 100%;
+   transition: all .2s ease;
+}
+
+.big-text {
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.small-text {
+    margin-top: 15px;
+    text-align: center;
+}
+.search-btn {
+    margin-left: 7px;
+}
+
+.link-btn div {
+    background-image: url('../Images/icons/link.png');
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.search-btn div {
+    margin-left: 25%;
+    background-image: url('../Images/icons/searchbtn.png');
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.link-btn:hover {
+    background-color: var(--primaryColor);
+}
+.search-btn:hover{
+    background-color: var(--primaryColor);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer */

@@ -16,7 +16,7 @@ const imageList = [
     "Images/graphic design/graphic-design4.jpg"
 ];
 
-// Text can be added to this array now I will keep 1 text 
+ 
 const textList = [
     `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio explicaboaspernatur harum vel. Et dignissimos illo odit non, minus nesciunt. Numquam nam sapiente possimus facere? Iusto similiquev eniam nam quaerat. Autem nemo labore repudiandae, esse omnis fugit sapiente officiis. Nam debitis ullam repellendus voluptas tempora minima, aliquid odio totam quos.`,
     `At the outset, web designing emerged as an easier and simple way of exchanging information. It was a better means of communication and had better networking benefits compared to the commercial reasons. Later on, the Web became an avenue for making profits, and the information space that was prior for providing free exchange thus changed to a space for commercial transactions.`,
@@ -25,3 +25,35 @@ const textList = [
     `The firms also provided the platform for major advances such as the firewalls, and other network security tools. Open licensing therefore caused firms to merge ideas and integrate development of operating systems and related software to high-tech but inexpensive software/hardware supercomputers to replace the original Pentium-based systems.`,
     `Although departments such as the DOD or Space Agencies may have developed or initiated most of the research into open source, in overall, today’s beneficiaries include commercial agencies. Commercial enterprises such as Netscape, Red Hat, Cygnus, MacAfee and Caldera were quick to realize the opportunities offered by web-based methodologies and begun to offer the open source arrangements.`
 ];
+
+
+
+
+
+class Images_filter {
+    constructor (image, type) {
+        this.image = image;
+        this.type = type
+    }
+}
+
+let FilterImages = [];
+
+for (let i = 1; i <= 12; i++) {
+    let item = new Images_filter(`<img src="Images/graphic design/graphic-design${i}.jpg" alt="" class="filter-item" data-type="Graphic">`,`Graphic`);
+    FilterImages.push(item);
+}
+for (let i = 1; i <= 12; i++) {
+    let item = new Images_filter(`<img src="Images/web design/web-design${i}.jpg" alt="" class="filter-item" data-type="Web">`,`Web`);
+    FilterImages.push(item);
+}
+
+for (let i = 1; i <= 12; i++) {
+    let item = new Images_filter(`<img src="Images/landing page/landing-page${i}.jpg" alt="" class="filter-item" data-type="Landing">`,`Landing`);
+    FilterImages.push(item);
+}
+for (let i = 1; i <= 12; i++) {
+    let item = new Images_filter(`<img src="Images/wordpress/wordpress${i}.jpg" alt="" class="filter-item" data-type="WordPress">`,`WordPress`);
+    FilterImages.push(item);
+}
+
