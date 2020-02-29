@@ -114,30 +114,60 @@ function setImageContentAll(item) {
         for (let i = 0; i < 12; i++) {
             str += FilterImages[randomArray[i]].image;
         }
-        filterContainer.innerHTML = str;
+
+        
+        let loader = '<div class="lds-roller" style="bottom: 0"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>';
+
+        filterContainer.innerHTML = loader;
+
+        setTimeout(function() {
+            filterContainer.innerHTML = str;
+            addEventImg();
+        },1000)
 
     }
 
     if(levelCount == 1) {
         document.querySelector('.fifth-section').style.height = '1820px';
         let str = filterContainer.innerHTML;
+
+
+        let loader = '<div class="lds-roller" style="bottom: -80px"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>';
+        filterContainer.innerHTML = str + loader;
+
         for (let i = 12; i < 24; i++) {
             str += FilterImages[randomArray[i]].image;
         }
-        filterContainer.innerHTML = str;
+        
+        setTimeout(function() {
+            filterContainer.innerHTML = str;
+            addEventImg();
+        },1000)
+
+
     }
 
     if(levelCount == 2) {
         document.querySelector('.fifth-section').style.height = '2300px';
         let str = filterContainer.innerHTML;
+
+        let loader = '<div class="lds-roller" style="bottom:-220px"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>';
+        filterContainer.innerHTML = str + loader;
+
+
         for (let i = 24; i < 36; i++) {
             str += FilterImages[randomArray[i]].image;
         }
-        filterContainer.innerHTML = str;
+       
         loadMore.style.display = 'none';
 
+
+        setTimeout(function() {
+            filterContainer.innerHTML = str;
+            addEventImg();
+        },1000)
     }
-    addEventImg();
+    
 }
 
 // Set filtered images on tab click
@@ -150,7 +180,17 @@ function setImageContent(item, type){
                 str += FilterImages[i].image;
             }
         }
-        filterContainer.innerHTML = str;
+
+
+
+        let loader = '<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>';
+
+        filterContainer.innerHTML = loader;
+
+        setTimeout(function() {
+            filterContainer.innerHTML = str;
+            addEventImg();
+        },1000)
         loadMore.style.display = 'none';
         levelCount = 0;
         addEventImg();
@@ -209,4 +249,5 @@ function addEventImg() {
         })
     }
 }
+
 
