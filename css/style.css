@@ -510,6 +510,7 @@ header > .container.row {
    cursor: pointer;
    border-radius: 100%;
    transition: all .2s ease;
+   outline: none;
 }
 
 .big-text {
