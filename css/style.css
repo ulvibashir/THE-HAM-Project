@@ -26,6 +26,8 @@
     width: 1160px;
     margin: 0 auto;
     height: 100%;
+
+
 }
 
 header > .container.row {
@@ -110,7 +112,7 @@ header > .container.row {
     /* default image */
     /* background-image: url('../Images/Sections background/section-1\(header\).jpg'); */
     background-image: url('../Images/night.jpg');
-
+    min-width: 1200px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -158,6 +160,7 @@ header > .container.row {
     font-weight: 500;
     text-transform: uppercase;
     transition: all .4s ease;
+    
 }
 
 .left-button {
@@ -187,6 +190,8 @@ header > .container.row {
 .second-section {
     width: 100%;
     height: 400px;
+    min-width: 1200px;
+
 }
 
 .second-section img {
@@ -237,7 +242,6 @@ header > .container.row {
 
 .third-section{
     height: 600px;
-    
 }
 
 .section-title {
@@ -347,6 +351,8 @@ header > .container.row {
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
+    min-width: 1200px;
+
 }
 
 .dark-background {
@@ -570,6 +576,8 @@ header > .container.row {
     justify-content: center;
     width: 100%;
     height: 90px;
+    min-width: 1200px;
+
     background-color: #1c2a33;
 }
 
